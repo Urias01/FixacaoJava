@@ -1,9 +1,8 @@
 /*
     Name: AulaVetor.java
     Author: Urias Pereira
-    Date: 29/04/2022
+    Date: 29 Abril 2022
     Description: Aprendendo sobre vetores
-
 */
 
 package application;
