@@ -101,7 +101,7 @@ public class CadastroBanco {
 
         if(cadastro.getChoose().equalsIgnoreCase("y") || cadastro.getChoose().equalsIgnoreCase("yes")){ 
             
-            System.out.print("How many deposit you would want to do? ");
+            System.out.print("How many withdraw you would want to do? ");
             quantity = scanner.nextInt();
             System.out.print("\n\n");
     
