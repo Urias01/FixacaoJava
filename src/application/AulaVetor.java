@@ -22,18 +22,20 @@ public class AulaVetor {
 
     for (int i = 0; i < n; i++) {
       vector[i] = sc.nextDouble();
-    } // Finish for
+    } // End for
 
     double sum = 0.0 ;
     
     for (int i = 0 ; i < n ; i++) {
         sum += vector[i];
-    } // Finish for
+    } // End for
 
     double avg = sum / n;
 
     System.out.printf("Average: %.2f \n", avg);
 
-    sc.close(); // Finish Scanner
+    sc.close(); // End Scanner
+    
   }
+
 }

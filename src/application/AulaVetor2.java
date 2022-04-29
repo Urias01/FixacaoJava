@@ -32,20 +32,20 @@ public class AulaVetor2 {
        
             vector[i] = new Vetor2(name, price);
 
-        } // Finish for
+        } // End for
 
         double sum = 0.0 ;
 
         for (int i = 0; i < vector.length ; i++) {
             sum += vector[i].getPrice();
-        } // Finish for
+        } // End for
 
         double avg = sum / n ;
 
         System.out.printf("Average price = %.2f \n", avg) ;
 
-        sc.close(); // Finish Scanner
+        sc.close(); // End Scanner
 
-    } // Finish main
+    } // End main
     
-} // Finish class
+} // End class

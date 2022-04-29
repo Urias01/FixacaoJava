@@ -1,5 +1,5 @@
 /*
-    Name: AulaVetor.java
+    Name: Vetor2.java
     Author: Urias Pereira
     Date: 29 Abril 2022
     Description: Aprendendo sobre vetores
@@ -15,7 +15,7 @@ public class Vetor2 {
     public Vetor2(String name, double price){
         this.name = name ;
         this.price = price ;
-    } // Finish Constructor
+    } // End Constructor
 
     public void setName(String name){
         this.name = name;
@@ -31,4 +31,4 @@ public class Vetor2 {
         return price ;
     }
 
-} // Finish class
+} // End class
