@@ -24,7 +24,7 @@ public class CadastroBanco {
         System.out.print("Account number: ");
         int numberAccount = scanner.nextInt();
         
-        System.out.print("Name: ");
+        System.out.print("Account Holder: ");
         String name = scanner.next();
         
         System.out.print("Do you want enter with initial Deposit? (Y/N): ");
@@ -35,7 +35,7 @@ public class CadastroBanco {
 
         cadastro = new Cadastro(numberAccount, name, initialDeposit, choose, balance, quantity);
         
-        if(cadastro.getChoose().equals("y") || cadastro.getChoose().equals("yes")){ 
+        if(cadastro.getChoose().equalsIgnoreCase("y") || cadastro.getChoose().equalsIgnoreCase("yes")){ 
 
             System.out.print("Initial Deposit: ");
             initialDeposit = scanner.nextDouble();
@@ -44,7 +44,7 @@ public class CadastroBanco {
             balance = initialDeposit ;
             cadastro.setBalance(balance);
 
-        }else if(cadastro.getChoose().equals("n") || cadastro.getChoose().equals("no")){
+        }else if(cadastro.getChoose().equalsIgnoreCase("n") || cadastro.getChoose().equalsIgnoreCase("no")){
             
             System.out.print("Your initial deposit is 0");
             initialDeposit = 0.0 ;
@@ -58,14 +58,14 @@ public class CadastroBanco {
         System.out.println("\n----------------------------------------------------");
         System.out.println("Data account: ");
         System.out.println("Number Account: " + cadastro.getNumberAccount());
-        System.out.println("User Name: " + cadastro.getName());
+        System.out.println("Account Holder: " + cadastro.getName());
         System.out.println("Initial Deposit: " + cadastro.getInitialDeposit());
         System.out.println("\n----------------------------------------------------");
         
         System.out.print("Do you wan to do a deposit? (y/n): ");
         choose = scanner.next();
 
-        if(cadastro.getChoose().equals("y") || cadastro.getChoose().equals("yes")){ 
+        if(cadastro.getChoose().equalsIgnoreCase("y") || cadastro.getChoose().equalsIgnoreCase("yes")){ 
             
             System.out.print("How many deposit you would want to do? ");
             quantity = scanner.nextInt();
@@ -80,7 +80,7 @@ public class CadastroBanco {
                 cadastro.setBalance(balance);
             }
             
-        }else if(cadastro.getChoose().equals("n") || cadastro.getChoose().equals("no")){
+        }else if(cadastro.getChoose().equalsIgnoreCase("n") || cadastro.getChoose().equalsIgnoreCase("no")){
 
             System.out.print("Your deposits made is 0");
             scanner.nextLine();
@@ -89,14 +89,17 @@ public class CadastroBanco {
         
         System.out.println("\n----------------------------------------------------\n\n");
         
-        System.out.println("Account balance: " + cadastro.getBalance() );
+        System.out.println("Data account: ");
+        System.out.println("Number Account: " + cadastro.getNumberAccount());
+        System.out.println("Account Holder: " + cadastro.getName());
+        System.out.println("Account balance: " + Math.round(cadastro.getBalance()));
     
         System.out.println("\n----------------------------------------------------\n\n");
 
         System.out.print("you want to withdraw any value? (y/n): ");
         choose = scanner.next();
 
-        if(cadastro.getChoose().equals("y") || cadastro.getChoose().equals("yes")){ 
+        if(cadastro.getChoose().equalsIgnoreCase("y") || cadastro.getChoose().equalsIgnoreCase("yes")){ 
             
             System.out.print("How many deposit you would want to do? ");
             quantity = scanner.nextInt();
@@ -111,7 +114,7 @@ public class CadastroBanco {
                 cadastro.setBalance(balance);
             }
             
-        }else if(cadastro.getChoose().equals("n") || cadastro.getChoose().equals("no")){
+        }else if(cadastro.getChoose().equalsIgnoreCase("n") || cadastro.getChoose().equalsIgnoreCase("no")){
     
             System.out.print("Your deposits made is 0");
             scanner.nextLine();
@@ -119,8 +122,13 @@ public class CadastroBanco {
 
         System.out.println("\n----------------------------------------------------\n\n");
 
+        System.out.println("Data account: ");
+        System.out.println("Number Account: " + cadastro.getNumberAccount());
+        System.out.println("Account Holder: " + cadastro.getName());
         System.out.println("Account balance: " + Math.round(cadastro.getBalance()));
-       
+        
+        System.out.println("\n----------------------------------------------------");
+
         scanner.close();
     }
 
