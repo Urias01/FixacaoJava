@@ -8,6 +8,7 @@ package application;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Lista {
     
@@ -39,7 +40,16 @@ public class Lista {
         System.out.println("Index of Marco: " + list.indexOf("Marco"));
         
         System.out.println("______________________");
-
         
+        List<String> result = list.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList());
+        
+        for (String x : result) {
+            System.out.println(x);
+        } // End for
+        System.out.println("______________________");
+
+        String name = list.stream().filter(x -> x.charAt(0) == 'M').findFirst().orElse(null);
+        System.out.println(name);
+   
     }
 }
