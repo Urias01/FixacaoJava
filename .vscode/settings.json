@@ -5,6 +5,9 @@
         "lib/**/*.jar"
     ],
     "cSpell.words": [
+        "getcheck",
+        "personalityexception",
+        "setcheck",
         "trycatch",
         "vect"
     ]
