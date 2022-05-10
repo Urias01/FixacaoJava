@@ -5,10 +5,12 @@
         "lib/**/*.jar"
     ],
     "cSpell.words": [
+        "exercisefixationexception",
         "getcheck",
         "personalityexception",
         "setcheck",
         "trycatch",
-        "vect"
+        "vect",
+        "workingfiles"
     ]
 }
