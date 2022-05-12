@@ -1,0 +1,10 @@
+Herança => reuso
+Interface => contrato a ser cumprido 
+
+
+E se eu quiser implementar o Shape como interface, porém também quiser 
+definir uma estrutura comum reutilizável para todas as figuras?
+
+Pode se fazer uma interface shape e após uma classe abstrata para implementar a 
+sua necessidade e não repetir código para outras duas classes permitindo o reuso 
+
