@@ -19,11 +19,15 @@ public class Program {
         System.out.print("Months: ");
         int months = sc.nextInt();
 
-        InterestService is = new BrazilInterestService(1.0);
+        InterestService is = new BrazilInterestService(2.0);
         double payment = is.payment(amount, months);
-
+        is = new UsaInterestService(1.0);
+        double payment2 = is.payment(amount, months);
+        
         System.out.println("Payment after " + months + " months:");
         System.out.println(String.format("%.2f", payment));
+        System.out.println("Payment after " + months + " months:");
+        System.out.println(String.format("%.2f", payment2));
         sc.close(); 
     }
 }
