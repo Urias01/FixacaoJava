@@ -7,7 +7,6 @@ public class ComboDevice extends Device implements Scanner, Printer{
 
     public ComboDevice(String serialNumber) {
         super(serialNumber);
-        //TODO Auto-generated constructor stub
     }
 
     @Override

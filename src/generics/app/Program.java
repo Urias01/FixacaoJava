@@ -23,6 +23,7 @@ public class Program {
 
         ps.print(); 
         Integer x = ps.first();
+        System.out.println(x);
         System.out.println("First: " + ps.first());
         sc.close();
     }

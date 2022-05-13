@@ -28,7 +28,7 @@ public class Program {
     String sourceFolderStr = sourceFile.getParent();
 
     boolean success = new File(sourceFolderStr + "\\out").mkdir();
-
+    System.out.println(success);
     String targetFileStr = sourceFolderStr + "\\out\\summary.csv";
 
     try (
