@@ -1,0 +1,14 @@
+Herança múltipla e problema do diamante 
+
+Problema do diamante:
+
+A herança múltipla pode gerar o problema do diamante:
+Uma ambiguidade causada pela existência do mesmo método em mais de uma SuperClasse
+
+Herança múltipla não é permitida na maioria das linguagens! 
+
+
+Utilizando duas implements (interface) não é herança múltipla,
+pois NÃO há reuso entre ComboDevice e as interfaces Scanner e Printer
+
+ComboDevice não herda, mas sim implementa as interfaces (Cumpre o Contrato)
